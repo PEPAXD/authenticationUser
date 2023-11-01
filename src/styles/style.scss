@@ -1,157 +1,150 @@
-//  General styles 
+// General styles
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
     position: relative;
     width: 100vw;
     height: 100vh;
     background-color: #6b8290;
-    }
+}
 
-
-.form-container {
-    width: 30%;
-    height: 80%;
-
+.cardAccount {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 35rem;
+    width: 23rem;
     border-radius: 12px;
-    padding: 1rem 2rem;
-
+    padding: 2rem;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.title {
+h1 {
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
-    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    margin: 1rem 0 1rem 0;
     font-size: 2em;
     font-weight: 600;
 }
 
-.form {
+form {
     display: flex;
     flex-direction: column;
 
-    width: 100%;
-
-}
-
-.input {
-    border-radius: 2rem;
-    border: 1px solid #c0c0c0;
-    outline: 0 !important;
-
-    padding: 0.8rem 1rem;
-    margin-top: 1rem;
-}
-
-.page-link {
-
-    margin-bottom: 1rem;
-    padding-right: 1rem;
-
-    text-align: end;
-    text-decoration: underline;
-
-    color: #747474;
-    text-decoration-color: #747474;
-
-    &:hover {
-        color: #3a47aa;   
-        text-decoration-color: #3a47aa;
-    }
-
-    .page-link-label {
+    button {
+        padding: 0.6rem 0.9rem;
+        margin-top: 1rem;
+        border: 0;
+        outline: 0;
+        border-radius: 2rem;
+        color: white;
+        background: teal;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         cursor: pointer;
-    
-        font-size: 0.6em;
+
+        &:active {
+            opacity: 0.8;
+        }
+    }
+
+    input {
+        border-radius: 2rem;
+        border: 1px solid #c0c0c0;
+        padding: 0.8rem 1rem;
+        margin-top: 1rem;
+    }
+
+    p {
+        margin-top: 0.4rem;
+        padding-left: 0.5rem;
+        font-size: 10px;
+    }
+
+    a {
+        margin-top: 0.2rem;
+        padding-right: 0.5rem;
+        text-align: end;
+        text-decoration: underline;
+        font-size: 10px;
         font-weight: bold;
+        font-family: sans-serif;
+        color: #747474;
+        text-decoration-color: #747474;
+        cursor: pointer;
+
+        &:hover {
+            color: #3a47aa;
+            text-decoration-color: #3a47aa;
+        }
     }
-}
-
-.form-btn {
-    padding: 0.6rem 0.9rem;
-
-    border-radius: 2rem;
-    border: 0 !important;
-    outline: 0 !important;
-    
-    background: teal;
-    color: white;
-    cursor: pointer;
-    
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-    &:active {
-        opacity: 0.8;
-    }
-}
-
-.sign-up-label {
-    margin-top: 0.2rem;
-    padding-left: 0.5rem;
-    font-size: 10px;
-    color: #747474;
-}
-
-.sign-up-link {
-    margin-left: 1px;
-    font-size: 11px;
-    text-decoration: underline;
-    text-decoration-color: teal;
-    color: teal;
-    cursor: pointer;
-    font-weight: 800;
 }
 
 .buttons-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 20px;
-    gap: 15px;
-}
+    text-align: center;
 
-.apple-login-button,
-    .google-login-button {
-    border-radius: 20px;
-    box-sizing: border-box;
-    padding: 10px 15px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    h2 {
+        margin-bottom: 0.8rem;
+        font-size: 16px;
+        font-weight: 400;
+    }
 
-    font-size: 11px;
-    gap: 5px;
-}
+    .login-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
 
-.apple-login-button {
-    background-color: #000;
-    color: #fff;
-    border: 2px solid #000;
-}
 
-.google-login-button {
-    border: 2px solid #747474;
-}
+        button {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3.2rem;
+            height: 3.2rem;
+            border: 1px solid teal;
+            border-radius: 50%;
 
-.apple-icon,
-    .google-icon {
-    font-size: 18px;
-    margin-bottom: 1px;
+            
+            cursor: pointer;
+
+            transition: background-color 0.3s, color 0.3s ease;
+        }
+
+        i {
+            font-size: 2em;
+            color: teal;
+        }
+
+        .facebook:hover {
+            background-color: #1877f2;
+            border-color: transparent;
+            i{
+                color: white;
+            }
+        }
+
+        .google:hover {
+            background-color: #dd4b39;
+            border-color: transparent;
+            i{
+                color: white;
+            }
+        }
+
+        .github:hover {
+            background-color: #333;
+            border-color: transparent;
+            i{
+                color: white;
+            }
+        }
+    }
 }

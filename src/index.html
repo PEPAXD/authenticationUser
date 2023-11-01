@@ -13,37 +13,43 @@
         <title>UserAutenticacion</title>
         <link rel="icon" href="img/iconWeb.svg" type="image/svg+xml">
         
-        <!-- CSS mainStyle -->
+        <!-- CSS_Style -->
         <link rel="stylesheet" href="styles/style.css">
-        
     </head>
-<body>
 
-    <div class="form-container">
-        <p class="title">Welcome Again!</p>
-        <form class="form">
-            <input type="email" class="input" placeholder="Email">
-            <input type="password" class="input" placeholder="Password">
-            <p class="page-link">
-            <span class="page-link-label">Forgot Password?</span>
-            </p>
-            <button class="form-btn">Log in</button>
-        </form>
-        <p class="sign-up-label">
-            Don't have an account?<span class="sign-up-link">Sign up</span>
-        </p>
+<body>
+    <main>
+    <div class="cardAccount"> 
+        <div>
+
+            <!--TitleCard-->
+            <h1>Welcome Back</h1>
+
+            <!--LoginUser-->
+            <form>
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Password">
+                <a href="#">Forgot password?</a>
+
+                <button>Log in</button>
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+            </form>
+        </div>
+
+        <!--Connect_SocialAccounts-->
         <div class="buttons-container">
-            <div class="apple-login-button">
-            <span>Log in with Facebook</span>
-            </div>
-            <div class="google-login-button">
-            <span>Log in with Google</span>
-            </div>
-            <div class="google-login-button">
-                <span>Log in with GitHub</span>
-            </div>
+                <h2>Or sign in with</h2>
+                <div class="login-buttons">
+                    <button class="facebook"><i class="fab fa-facebook-f"></i></button>
+                    <button class="google"><i class="fab fa-google"></i></button>
+                    <button class="github"><i class="fab fa-github"></i></button>
+                </div>
         </div>
-        </div>
+    </div>
+    </main>
+    
+    <!-- FontAwesome-->
+    <script src="https://kit.fontawesome.com/542b53e460.js" crossorigin="anonymous"></script>
     
 </body>
 </html>
