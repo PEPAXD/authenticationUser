@@ -14,7 +14,7 @@
         <link rel="icon" href="img/iconWeb.svg" type="image/svg+xml">
         
         <!-- CSS_Style -->
-        <link rel="stylesheet" href="styles/login/login.css">
+        <link rel="stylesheet" href="styles/singup/signUp.css">
 
         <!-- Bootstrap-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
@@ -26,28 +26,43 @@
         <div>
 
             <!--TitleCard-->
-            <h1>Welcome Back</h1>
+            <h1>Register User</h1>
 
-            <!--LoginUser-->
+            <!--Sign Up User-->
             <form>
+                <input type="text" id="first_name" placeholder="First Name">
+                <input type="text" id="last_name" placeholder="Last Name">
                 <input type="email" id="email" placeholder="Email">
-                <input type="password" id="password" placeholder="Password">
-                <a href="#">Forgot password?</a>
 
-                <button>Log in</button>
-                <p>Don't have an account? <a href="./signUp.html">Sign up</a></p>
+                <div class="auxData">
+                    <label>
+                            <input type="date" id="dob" placeholder="Date of Birth">
+
+                            <div class="gender">
+                                <input type="radio" name="gender" value="male"><span>Male</span>
+                                <input type="radio" name="gender" value="female"><span>Female</span>
+                            </div>
+
+                            
+                    </label>
+                </div>
+
+                <div class="password">
+                <input type="password" id="password" placeholder="Password">
+                <input type="password" id="confirm_password" placeholder="Confirm Password">
+                </div>
+
+                <!-- Terms and Conditions Checkbox -->
+                <div>
+                    <input type="checkbox" id="agree" name="agree">
+                    <label for="agree">I want to join the newsletter</label>
+                </div>
+
+                <button>Sign up</button>
+                <p>Already have an account? <a href="./index.html">Log in</a></p>
             </form>
         </div>
 
-        <!--Connect_SocialAccounts-->
-        <div class="buttons-container">
-                <h2>Or sign in with</h2>
-                <div class="login-buttons">
-                    <button class="facebook"><i class="fab fa-facebook-f"></i></button>
-                    <button class="google"><i class="fab fa-google"></i></button>
-                    <button class="github"><i class="fab fa-github"></i></button>
-                </div>
-        </div>
     </div>
     </main>
     
