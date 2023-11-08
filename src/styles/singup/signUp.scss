@@ -53,8 +53,6 @@ form {
 
 
     .password{
-        margin-top: 2rem;
-
         input{
             width: 100%;
         }
@@ -87,6 +85,7 @@ form {
         border: 0;
         border-radius: 2rem;
         padding: 0.6rem 0.9rem;
+        margin-top: 2rem;
 
         background: teal;
         color: white;
@@ -161,7 +160,6 @@ form {
             border: 1px solid teal;
             border-radius: 50%;
 
-            
             cursor: pointer;
 
             transition: background-color 0.3s, color 0.3s ease;
@@ -170,30 +168,6 @@ form {
         i {
             font-size: 2em;
             color: teal;
-        }
-
-        .facebook:hover {
-            background-color: #1877f2;
-            border-color: transparent;
-            i{
-                color: white;
-            }
-        }
-
-        .google:hover {
-            background-color: #dd4b39;
-            border-color: transparent;
-            i{
-                color: white;
-            }
-        }
-
-        .github:hover {
-            background-color: #333;
-            border-color: transparent;
-            i{
-                color: white;
-            }
         }
     }
 }
