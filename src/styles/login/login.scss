@@ -50,16 +50,24 @@ form {
     display: flex;
     flex-direction: column;
 
-    button {
-        padding: 0.6rem 0.9rem;
-        margin-top: 1rem;
+    .button-link {
+        display: inline-block;
+
         border: 0;
-        outline: 0;
         border-radius: 2rem;
-        color: white;
+        padding: 0.6rem 0.9rem;
+
         background: teal;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        color: white;
+
+        font-size: 1em;
+        text-align: center;
+        text-decoration: none;
         cursor: pointer;
+
+        &:hover{
+            color: #fff;
+        }
 
         &:active {
             opacity: 0.8;

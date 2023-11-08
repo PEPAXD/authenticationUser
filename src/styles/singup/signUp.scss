@@ -51,6 +51,7 @@ form {
     display: flex;
     flex-direction: column;
 
+
     .password{
         margin-top: 2rem;
 
@@ -60,26 +61,44 @@ form {
     }
 
     .auxData  label{
-
+        
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        .gender span{
-            padding-right: 1rem;
+        input{
+            border: none;
+            border-bottom: 1px solid #c0c0c0;
+        }
+
+        .gender {
+            transform: translateY(3px);
+
+            span{
+                font-size: 0.9em;
+                padding: 0rem 0.5rem;
+            }
         }
     }
 
-    button {
-        padding: 0.6rem 0.9rem;
-        margin-top: 1rem;
+    .button-link {
+        display: inline-block;
+
         border: 0;
-        outline: 0;
         border-radius: 2rem;
-        color: white;
+        padding: 0.6rem 0.9rem;
+
         background: teal;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        color: white;
+
+        font-size: 1em;
+        text-align: center;
+        text-decoration: none;
         cursor: pointer;
+
+        &:hover{
+            color: #fff;
+        }
 
         &:active {
             opacity: 0.8;

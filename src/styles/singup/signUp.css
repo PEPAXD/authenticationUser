@@ -59,21 +59,33 @@ form .auxData label {
   align-items: center;
   justify-content: space-between;
 }
-form .auxData label .gender span {
-  padding-right: 1rem;
+form .auxData label input {
+  border: none;
+  border-bottom: 1px solid #c0c0c0;
 }
-form button {
-  padding: 0.6rem 0.9rem;
-  margin-top: 1rem;
+form .auxData label .gender {
+  transform: translateY(3px);
+}
+form .auxData label .gender span {
+  font-size: 0.9em;
+  padding: 0rem 0.5rem;
+}
+form .button-link {
+  display: inline-block;
   border: 0;
-  outline: 0;
   border-radius: 2rem;
-  color: white;
+  padding: 0.6rem 0.9rem;
   background: teal;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
   cursor: pointer;
 }
-form button:active {
+form .button-link:hover {
+  color: #fff;
+}
+form .button-link:active {
   opacity: 0.8;
 }
 form input {

@@ -30,26 +30,25 @@
             <h1>Register User</h1>
 
             <!--Sign Up User-->
-            <form>
+            <form id="SignUpForm">
                 <input type="text" id="first_name" placeholder="First Name">
                 <input type="text" id="last_name" placeholder="Last Name">
-                <input type="email" id="email" placeholder="Email">
+                <input type="email" id="SingUpEmail" placeholder="Email">
 
                 <div class="auxData">
                     <label>
-                            <input type="date" id="dob" placeholder="Date of Birth">
+                        
+                        <input type="date" id="dob" placeholder="Date of Birth">
 
-                            <div class="gender">
-                                <input type="radio" name="gender" value="male"><span>Male</span>
-                                <input type="radio" name="gender" value="female"><span>Female</span>
-                            </div>
-
-                            
+                        <div class="gender">
+                            <input type="radio" name="gender" value="male"><span>Male</span>
+                            <input type="radio" name="gender" value="female"><span>Female</span>
+                        </div>
                     </label>
                 </div>
 
                 <div class="password">
-                <input type="password" id="password" placeholder="Password">
+                <input type="password" id="SingUpPassword" placeholder="Password">
                 <input type="password" id="confirm_password" placeholder="Confirm Password">
                 </div>
 
@@ -59,7 +58,9 @@
                     <label for="agree">I want to join the newsletter</label>
                 </div>
 
-                <button>Sign up</button>
+
+                <!-- linkHtml -->
+                <a href="./userValidated.html" class="button-link">Sign up</a>
                 <p>Already have an account? <a href="./index.html">Log in</a></p>
             </form>
         </div>
