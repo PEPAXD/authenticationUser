@@ -68,19 +68,30 @@ form .auxData label .gender span {
   padding: 0rem 0.5rem;
 }
 form .button-link {
-  display: inline-block;
-  border: 0;
-  border-radius: 2rem;
-  padding: 0.6rem 0.9rem;
-  margin-top: 2rem;
-  background: teal;
-  color: white;
-  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 1.5rem;
+  padding: 1rem;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
 }
-form .button-link:hover {
+form .button-link button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  border-radius: 2rem;
+  color: #fff;
+  background: teal;
+}
+form .button-link button:hover {
   color: #fff;
 }
 form .button-link:active {
