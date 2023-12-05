@@ -24,7 +24,6 @@ signupForm.addEventListener('submit', async (e) => {
                 break;
             default:
                 showErrorToast('Ocurrió un error durante el registro. Por favor, inténtalo de nuevo.');
-                console.log(error.code);
         }
     }
 });

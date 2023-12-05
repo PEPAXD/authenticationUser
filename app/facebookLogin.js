@@ -1,9 +1,9 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
-import { getAuth, GithubAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js";
+import { getAuth, FacebookAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js";
 import { auth } from './firebase.js';
 import { showErrorToast } from './showError.js'
 
-const githubButton = document.querySelector('#githubLogin');
+const githubButton = document.querySelector('#facebookLogin');
 
 githubButton.addEventListener('click', async (e) => {
     e.preventDefault();

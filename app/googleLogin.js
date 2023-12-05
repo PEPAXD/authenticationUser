@@ -1,6 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js";
 import { auth } from './firebase.js';
+import { showErrorToast } from './showError.js'
 
 const googleButton = document.querySelector('#googleLogin');
 
@@ -14,15 +15,7 @@ googleButton.addEventListener('click', async (e) => {
         window.location.href = "./userValidated.html";
 
     } catch (error) {
-        console.error('Error:', error);
-        console.error('Error code:', error.code);
-        console.error('Error message:', error.message);
-    
-        if (error.code === 'auth/unauthorized-domain') {
-            console.log('Dominio no autorizado');
-        } else if (error.code === 'auth/popup-closed-by-user') {
-            console.log('Ventana emergente cerrada por el usuario');
-        }
+        showErrorToast('Ocurrió un error durante el registro');
 
     } finally {
         googleButton.disabled = false;
