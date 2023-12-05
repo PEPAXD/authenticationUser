@@ -3,12 +3,12 @@ import { getAuth, FacebookAuthProvider, signInWithPopup } from "https://www.gsta
 import { auth } from './firebase.js';
 import { showErrorToast } from './showError.js'
 
-const githubButton = document.querySelector('#facebookLogin');
+const facebookButton = document.querySelector('#facebookLogin');
 
-githubButton.addEventListener('click', async (e) => {
+facebookButton.addEventListener('click', async (e) => {
     e.preventDefault();
-    const provider = new GithubAuthProvider();
-    githubButton.disabled = true;
+    const provider = new FacebookAuthProvider();
+    facebookButton.disabled = true;
 
     try {
         const result = await signInWithPopup(auth, provider);
@@ -23,6 +23,6 @@ githubButton.addEventListener('click', async (e) => {
         }
 
     } finally {
-        githubButton.disabled = false;
+        facebookButton.disabled = false;
     }
 });
