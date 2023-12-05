@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js";
+import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js";
 import { auth } from './firebase.js';
 import { showErrorToast } from './showError.js'
 
@@ -15,19 +15,16 @@ signupForm.addEventListener('submit', async (e) => {
         window.location.href = "./userValidated.html";
 
     } catch (error) {
-
-        if (error.code === 'auth/invalid-email') {
-            showErrorToast('Invalid email format. Please enter a valid email address.');
-        } else if (error.code === 'auth/weak-password') {
-            showErrorToast('Password is too weak. Please choose a stronger password.');
-        } else if (error.code === 'auth/email-already-in-use') {
-            showErrorToast('The email address is already in use by another account.');
-        } else if (error.code === 'auth/user-not-found') {
-            showErrorToast('User not found. Please check your email address or sign up for a new account.');
-        } else if (error.code === 'auth/wrong-password') {
-            showErrorToast('Incorrect password. Please enter the correct password.');
-        } else {
-            showErrorToast('An error occurred during registration. Please try again.');
+        switch (error.code) {
+            case 'auth/invalid-email':
+                showErrorToast('Formato de correo electrónico inválido. Por favor, introduce una dirección de correo electrónico válida.');
+                break;
+            case 'auth/weak-password':
+                showErrorToast('Contraseña débil. Por favor, introduce una contraseña de al menos 6 caracteres.');
+                break;
+            default:
+                showErrorToast('Ocurrió un error durante el registro. Por favor, inténtalo de nuevo.');
+                console.log(error.code);
         }
     }
 });
