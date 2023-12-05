@@ -18,8 +18,10 @@ facebookButton.addEventListener('click', async (e) => {
     } catch (error) {
         if (error.code === 'auth/account-exists-with-different-credential') {
             window.location.href = "./userValidated.html";
+
         } else {
             showErrorToast('Ocurrió un error durante el registro');
+            console.log(error);
         }
 
     } finally {
