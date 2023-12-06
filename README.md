@@ -41,7 +41,7 @@ If you wish to contribute to the project, follow these steps:
 - Make your changes or improvements in a separate branch.
 - Submit a pull request detailing your modifications.
 
-- ## User Security
+## User Security
 It's important to note that while this project implements various authentication methods, it's for educational purposes and aimed at strengthening knowledge regarding authentication processes and best practices.
 
 **Note**: Although efforts are made to maintain security best practices, it's advisable not to use real or sensitive information in this project as it's meant for educational purposes only.
