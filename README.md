@@ -22,7 +22,7 @@ It utilizes Firebase Authentication to manage various authentication methods, in
 - **Firebase Configuration**: Project configuration in Firebase for authentication management.
 - **Firebase Functions (if applicable)**: Possible implementation of cloud functions for additional management.
 
-- ## Website Structure
+## Website Structure
 1. `index.html`: loginUser.
 2. `signUp.html`: addUser to dataBase.
 3. `userValidated.html`: "User login/added to the database.".
