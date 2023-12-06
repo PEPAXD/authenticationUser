@@ -155,4 +155,10 @@ form a:hover {
 }
 .buttons-container .login-buttons .github:hover i {
   color: white;
+}
+
+@media screen and (max-width: 425px) {
+  .cardAccount {
+    width: 20rem;
+  }
 }/*# sourceMappingURL=login.css.map */

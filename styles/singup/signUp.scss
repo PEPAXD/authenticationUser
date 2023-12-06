@@ -188,3 +188,17 @@ form {
     }
 }
 
+//responsive andriod
+@media screen and (max-width: 425px) {
+    .cardAccount {
+        width: 20rem;
+
+        .gender{
+            padding: 0rem;
+        }
+
+        form .auxData label .gender span{
+            padding: 0rem;
+        }
+    }
+}

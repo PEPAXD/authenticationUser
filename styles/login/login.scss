@@ -183,3 +183,10 @@ form {
         }
     }
 }
+
+//responsive andriod
+@media screen and (max-width: 425px) {
+    .cardAccount {
+        width: 20rem;
+    }
+}

@@ -152,4 +152,16 @@ form a:hover {
 .buttons-container .login-buttons i {
   font-size: 2em;
   color: teal;
+}
+
+@media screen and (max-width: 425px) {
+  .cardAccount {
+    width: 20rem;
+  }
+  .cardAccount .gender {
+    padding: 0rem;
+  }
+  .cardAccount form .auxData label .gender span {
+    padding: 0rem;
+  }
 }/*# sourceMappingURL=signUp.css.map */
